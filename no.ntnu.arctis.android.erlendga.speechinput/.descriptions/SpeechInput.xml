@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Speech Input" 
+    uuid="_UgxtUgq1EeGNm-oHx2GRZA" 
+    status="under construction" 
+    type="block" 
+    >
+    <required>
+        <resource path="res/layout/voice_recognition.xml"/>
+        <block name="c1" uuid="_94GQMeH3EeCKQv4llUXfRg"/>
+        <block name="c2" uuid="_QYAgQkpxEd-2GcCnj744fA"/>
+        <block name="c0" uuid="_8A22Ed6nEeCsi6itJ7ep6w"/>
+    </required>
+    <extras>
+        <extra key="android_activity" value="no.ntnu.item.arctis.android.erlendga.speechinput.speechinput.SpeechInputActivity"/>
+    </extras>
+</block>

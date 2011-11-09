@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="no.ntnu.item.arctis.ARCTIS_RUNTIME_CONTAINER"/>
+	<classpathentry kind="src" path="/com.bitreactive.library.android.core"/>
+	<classpathentry kind="src" path="/com.bitreactive.library.android.dialogs"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.bitreactive.library.flowlogic"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/no.ntnu.item.arctis.library.android"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Speech Input System" 
+    uuid="_Sqb2wQq1EeGNm-oHx2GRZA" 
+    status="under construction" 
+    type="system" 
+    >
+    <required>
+        <block name="c1" uuid="_UgxtUgq1EeGNm-oHx2GRZA"/>
+        <block name="c0" uuid="_lkMhkN5AEeCc1qVUXAlx-g"/>
+    </required>
+</block>

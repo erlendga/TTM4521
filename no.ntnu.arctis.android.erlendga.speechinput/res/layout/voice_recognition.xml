@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout1" android:weightSum="1">
+        <Button android:layout_height="wrap_content" android:onClick="speakButtonClicked" android:id="@+id/btn_speak" android:text="Record" android:layout_width="150dp"></Button>
+        <CheckBox android:text="Smart Search" android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    </LinearLayout>
+    
+    <ListView 
+    	android:id="@+id/list"
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="1" />
+</LinearLayout>
