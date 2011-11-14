@@ -5,4 +5,7 @@
     status="under construction" 
     type="block" 
     >
+    <extras>
+        <extra key="android_permission" value="android.permission.WAKE_LOCK"/>
+    </extras>
 </block>

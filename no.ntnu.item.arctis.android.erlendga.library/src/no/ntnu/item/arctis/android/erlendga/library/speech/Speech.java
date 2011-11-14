@@ -7,6 +7,7 @@ import com.bitreactive.library.android.core.startinvisibleactivity.InvisibleActi
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.os.PowerManager;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.OnInitListener;
 import android.speech.tts.TextToSpeech.OnUtteranceCompletedListener;
@@ -21,6 +22,8 @@ public class Speech extends Block {
 	public final int requestCode;
 	// Instance parameter. Edit only in overview page.
 	public final java.lang.String ID;
+	public com.bitreactive.library.android.core.startinvisibleactivity.InvisibleActivity activity;
+	public android.os.PowerManager.WakeLock wakeLock;
 	
 	public void textToSpeech(String text) {
 		HashMap<String, String> params = new HashMap<String, String>();
@@ -51,7 +54,7 @@ public class Speech extends Block {
 		}	
 	}
 
-	public void startTextToSpeechActivity(InvisibleActivity activity) {
+	public void startTextToSpeechActivity() {
 		activity.registerOnActivityResultListener(requestCode, new IActivityResultListener() {
 			
 			public void onActivityResult(int resultCode, Intent data) {
@@ -103,6 +106,17 @@ public class Speech extends Block {
 	public Speech(int requestCode, java.lang.String ID) {
 	    this.requestCode = requestCode;
 	    this.ID = ID;
+	}
+
+	public PowerManager.WakeLock aquireWakeLock() {
+		PowerManager powerManager = (PowerManager) getContext().getSystemService(getContext().POWER_SERVICE);
+		PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "Speech");
+		wakeLock.acquire();
+		return wakeLock;
+	}
+
+	public void releaseWakeLock() {
+		wakeLock.release();
 	}
 
 }
