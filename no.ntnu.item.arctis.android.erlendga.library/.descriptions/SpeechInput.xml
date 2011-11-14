@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Speech Input" 
+    uuid="_bLTI8grTEeGM-YHSbigeqQ" 
+    status="under construction" 
+    type="block" 
+    >
+    <required>
+        <resource path="res/layout/main.xml"/>
+        <block name="c1" uuid="_sVzD4grEEeGNm-oHx2GRZA"/>
+        <block name="c2" uuid="_JiYjwArOEeGM-YHSbigeqQ"/>
+        <block name="c0" uuid="_FPE5Ugq_EeGNm-oHx2GRZA"/>
+        <block name="c6" uuid="_oEDwow0vEeGC6tJ1huwUZQ"/>
+        <block name="c4" uuid="_94GQMeH3EeCKQv4llUXfRg"/>
+        <block name="c3" uuid="_KIUrIMreEd6ZEtSR0CmZCw"/>
+        <block name="c7" uuid="_8A22Ed6nEeCsi6itJ7ep6w"/>
+    </required>
+</block>

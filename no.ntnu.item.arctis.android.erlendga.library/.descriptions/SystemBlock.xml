@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="System Block" 
+    uuid="_jHKt9ArAEeGNm-oHx2GRZA" 
+    status="under construction" 
+    type="system" 
+    >
+    <required>
+        <block name="c1" uuid="_bLTI8grTEeGM-YHSbigeqQ"/>
+        <block name="c0" uuid="_lkMhkN5AEeCc1qVUXAlx-g"/>
+    </required>
+</block>

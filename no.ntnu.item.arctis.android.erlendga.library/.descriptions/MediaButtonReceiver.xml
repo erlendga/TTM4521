@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Media Button Receiver" 
+    uuid="_FPE5Ugq_EeGNm-oHx2GRZA" 
+    status="under construction" 
+    type="block" 
+    >
+    <extras>
+        <extra key="android_activity" value="com.bitreactive.library.android.core.startinvisibleactivity.InvisibleActivity"/>
+    </extras>
+</block>

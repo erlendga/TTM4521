@@ -34,7 +34,7 @@ public class SpeechInput extends AndroidBlock {
 				activity.setEnabled(R.id.btn_speak, true);		
 				checkBox = (CheckBox) activity.findViewById(R.id.checkBox1);	
 
-				BroadcastReceiver boadcastReceiver = new BroadcastReceiver() {
+				BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
 					@Override
 					public void onReceive(Context context, Intent intent) {
 						if (Intent.ACTION_MEDIA_BUTTON.equals(intent.getAction())) {
@@ -56,7 +56,7 @@ public class SpeechInput extends AndroidBlock {
 				};		
 				IntentFilter filter = new IntentFilter(Intent.ACTION_MEDIA_BUTTON);
 				filter.setPriority(1000000);
-				activity.registerReceiver(boadcastReceiver, filter);
+				activity.registerReceiver(broadcastReceiver, filter);
 			}
 		};
 		activity.runOnUiThread(r);

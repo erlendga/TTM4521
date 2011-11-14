@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="xgml">
+	<attribute key="Creator" type="String">yFiles</attribute>
+	<attribute key="Version" type="String">2.6</attribute>
+	<section name="graph">
+		<attribute key="hierarchic" type="int">1</attribute>
+		<attribute key="label" type="String"></attribute>
+		<attribute key="directed" type="int">1</attribute>
+		<section name="node">
+		<attribute key="id" type="String">0</attribute>
+		<attribute key="label" type="String">51</attribute>
+		<section name="graphics">
+			<attribute key="type" type="String">ellipse</attribute>
+			<attribute key="fill" type="String">#AAC1DF</attribute>
+			<attribute key="outline" type="String">#AAC1DF</attribute>
+		</section>
+		<section name="LabelGraphics">
+			<attribute key="text" type="String">-initial-</attribute>
+			<attribute key="fontSize" type="int">12</attribute>
+			<attribute key="fontName" type="String">Dialog</attribute>
+			<attribute key="anchor" type="String">c</attribute>
+		</section>
+		</section>
+		<section name="node">
+		<attribute key="id" type="String">1</attribute>
+		<attribute key="label" type="String">51</attribute>
+		<section name="graphics">
+			<attribute key="type" type="String">roundrectangle</attribute>
+			<attribute key="fill" type="String">#D9E2EF</attribute>
+			<attribute key="outline" type="String">#D9E2EF</attribute>
+		</section>
+		<section name="LabelGraphics">
+			<attribute key="text" type="String">starting</attribute>
+			<attribute key="fontSize" type="int">12</attribute>
+			<attribute key="fontName" type="String">Dialog</attribute>
+			<attribute key="anchor" type="String">c</attribute>
+		</section>
+		</section>
+		<section name="node">
+		<attribute key="id" type="String">3</attribute>
+		<attribute key="label" type="String">51</attribute>
+		<section name="graphics">
+			<attribute key="type" type="String">roundrectangle</attribute>
+			<attribute key="fill" type="String">#D9E2EF</attribute>
+			<attribute key="outline" type="String">#D9E2EF</attribute>
+		</section>
+		<section name="LabelGraphics">
+			<attribute key="text" type="String">active</attribute>
+			<attribute key="fontSize" type="int">12</attribute>
+			<attribute key="fontName" type="String">Dialog</attribute>
+			<attribute key="anchor" type="String">c</attribute>
+		</section>
+		</section>
+		<section name="node">
+		<attribute key="id" type="String">4</attribute>
+		<attribute key="label" type="String">51</attribute>
+		<section name="graphics">
+			<attribute key="type" type="String">roundrectangle</attribute>
+			<attribute key="fill" type="String">#D9E2EF</attribute>
+			<attribute key="outline" type="String">#D9E2EF</attribute>
+		</section>
+		<section name="LabelGraphics">
+			<attribute key="text" type="String">speaking</attribute>
+			<attribute key="fontSize" type="int">12</attribute>
+			<attribute key="fontName" type="String">Dialog</attribute>
+			<attribute key="anchor" type="String">c</attribute>
+		</section>
+		</section>
+		<section name="node">
+		<attribute key="id" type="String">177726_final_2</attribute>
+		<attribute key="label" type="String">51</attribute>
+		<section name="graphics">
+			<attribute key="type" type="String">ellipse</attribute>
+			<attribute key="fill" type="String">#AAC1DF</attribute>
+			<attribute key="outline" type="String">#AAC1DF</attribute>
+		</section>
+		<section name="LabelGraphics">
+			<attribute key="text" type="String">-final-</attribute>
+			<attribute key="fontSize" type="int">12</attribute>
+			<attribute key="fontName" type="String">Dialog</attribute>
+			<attribute key="anchor" type="String">c</attribute>
+		</section>
+		</section>
+		<section name="node">
+		<attribute key="id" type="String">29790563_final_6</attribute>
+		<attribute key="label" type="String">51</attribute>
+		<section name="graphics">
+			<attribute key="type" type="String">ellipse</attribute>
+			<attribute key="fill" type="String">#AAC1DF</attribute>
+			<attribute key="outline" type="String">#AAC1DF</attribute>
+		</section>
+		<section name="LabelGraphics">
+			<attribute key="text" type="String">-final-</attribute>
+			<attribute key="fontSize" type="int">12</attribute>
+			<attribute key="fontName" type="String">Dialog</attribute>
+			<attribute key="anchor" type="String">c</attribute>
+		</section>
+		</section>
+      <section name="edge">
+      <attribute key="source" type="String">0</attribute>
+      <attribute key="target" type="String">1</attribute>
+      <attribute key="label" type="String">start / </attribute>
+      <section name="graphics">      	<attribute key="fill" type="String">#000000</attribute>
+      	<attribute key="targetArrow" type="String">standard</attribute>
+      </section>
+      <section name="LabelGraphics">
+      	<attribute key="fill" type="String">#D9E2EF</attribute>
+      	<attribute key="fontSize" type="int">12</attribute>
+      	<attribute key="fontName" type="String">Dialog</attribute>
+      	<attribute key="model" type="String">free</attribute>
+      </section>
+      </section>
+      <section name="edge">
+      <attribute key="source" type="String">1</attribute>
+      <attribute key="target" type="String">177726_final_2</attribute>
+      <attribute key="label" type="String"> / failed</attribute>
+      <section name="graphics">      	<attribute key="fill" type="String">#000000</attribute>
+      	<attribute key="targetArrow" type="String">standard</attribute>
+      </section>
+      <section name="LabelGraphics">
+      	<attribute key="fill" type="String">#D9E2EF</attribute>
+      	<attribute key="fontSize" type="int">12</attribute>
+      	<attribute key="fontName" type="String">Dialog</attribute>
+      	<attribute key="model" type="String">free</attribute>
+      </section>
+      </section>
+      <section name="edge">
+      <attribute key="source" type="String">1</attribute>
+      <attribute key="target" type="String">3</attribute>
+      <attribute key="label" type="String"> / initialized</attribute>
+      <section name="graphics">      	<attribute key="fill" type="String">#000000</attribute>
+      	<attribute key="targetArrow" type="String">standard</attribute>
+      </section>
+      <section name="LabelGraphics">
+      	<attribute key="fill" type="String">#D9E2EF</attribute>
+      	<attribute key="fontSize" type="int">12</attribute>
+      	<attribute key="fontName" type="String">Dialog</attribute>
+      	<attribute key="model" type="String">free</attribute>
+      </section>
+      </section>
+      <section name="edge">
+      <attribute key="source" type="String">3</attribute>
+      <attribute key="target" type="String">29790563_final_6</attribute>
+      <attribute key="label" type="String">text / completed</attribute>
+      <section name="graphics">      	<attribute key="fill" type="String">#000000</attribute>
+      	<attribute key="targetArrow" type="String">standard</attribute>
+      </section>
+      <section name="LabelGraphics">
+      	<attribute key="fill" type="String">#D9E2EF</attribute>
+      	<attribute key="fontSize" type="int">12</attribute>
+      	<attribute key="fontName" type="String">Dialog</attribute>
+      	<attribute key="model" type="String">free</attribute>
+      </section>
+      </section>
+      <section name="edge">
+      <attribute key="source" type="String">4</attribute>
+      <attribute key="target" type="String">3</attribute>
+      <attribute key="label" type="String"> / completed</attribute>
+      <section name="graphics">      	<attribute key="fill" type="String">#000000</attribute>
+      	<attribute key="targetArrow" type="String">standard</attribute>
+      </section>
+      <section name="LabelGraphics">
+      	<attribute key="fill" type="String">#D9E2EF</attribute>
+      	<attribute key="fontSize" type="int">12</attribute>
+      	<attribute key="fontName" type="String">Dialog</attribute>
+      	<attribute key="model" type="String">free</attribute>
+      </section>
+      </section>
+    </section>
+</section>

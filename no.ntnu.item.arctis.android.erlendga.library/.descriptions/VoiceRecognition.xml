@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Voice Recognition" 
+    uuid="_sVzD4grEEeGNm-oHx2GRZA" 
+    status="under construction" 
+    type="block" 
+    >
+    <required>
+        <block name="c0" uuid="_gAqucQ3eEeGiPP8N3fV6YQ"/>
+    </required>
+</block>
