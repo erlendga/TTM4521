@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Ready For Speech Alert" 
+    uuid="_VquU8Q-4EeGOHPBsfrMuXg" 
+    status="under construction" 
+    type="block" 
+    >
+    <required>
+        <resource path="res/raw/alert_sound_ideal_for_software_systems_etc_ver_3.mp3"/>
+    </required>
+</block>

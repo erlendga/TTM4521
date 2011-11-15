@@ -38,7 +38,7 @@ public class MediaButtonReceiver extends AndroidBlock {
 		
 		IntentFilter intentFilter = new IntentFilter(Intent.ACTION_MEDIA_BUTTON);
 		intentFilter.setPriority(priority);
-		context.registerReceiver(broadcastReceiver, intentFilter);	
+		context.registerReceiver(broadcastReceiver, intentFilter);
 	}
 
 	public void removeRegistration() {

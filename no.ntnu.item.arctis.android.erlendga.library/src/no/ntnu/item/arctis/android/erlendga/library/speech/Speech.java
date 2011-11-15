@@ -115,7 +115,7 @@ public class Speech extends Block {
 		return wakeLock;
 	}
 
-	public void releaseWakeLock() {
+	public void finish() {
 		wakeLock.release();
 	}
 

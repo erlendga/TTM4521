@@ -3,11 +3,6 @@ package no.ntnu.item.arctis.android.erlendga.library.speechinput;
 import no.ntnu.item.arctis.android.R;
 import no.ntnu.item.arctis.runtime.Block;
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.media.MediaPlayer;
-import android.os.AsyncTask;
-import android.os.PowerManager;
 
 public class SpeechInput extends Block {
 
@@ -67,9 +62,5 @@ public class SpeechInput extends Block {
 
 	public void moveTaskToFront() {
 		activity.moveTaskToBack(false);
-	}
-
-	public void setMessageError() {
-		message = "An error occurred. Please try again.";
 	}
 }

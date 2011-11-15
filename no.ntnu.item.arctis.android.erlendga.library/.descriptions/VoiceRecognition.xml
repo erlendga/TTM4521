@@ -12,5 +12,6 @@
     <extras>
         <extra key="android_permission" value="android.permission.WAKE_LOCK"/>
         <extra key="android_permission" value="android.permission.INTERNET"/>
+        <extra key="android_permission" value="android.permission.RECORD_AUDIO"/>
     </extras>
 </block>
