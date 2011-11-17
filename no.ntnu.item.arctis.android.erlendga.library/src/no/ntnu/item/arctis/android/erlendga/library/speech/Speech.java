@@ -109,7 +109,7 @@ public class Speech extends Block {
 	}
 
 	public PowerManager.WakeLock aquireWakeLock() {
-		PowerManager powerManager = (PowerManager) getContext().getSystemService(getContext().POWER_SERVICE);
+		PowerManager powerManager = (PowerManager) getContext().getSystemService(Context.POWER_SERVICE);
 		PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "Speech");
 		wakeLock.acquire();
 		return wakeLock;
