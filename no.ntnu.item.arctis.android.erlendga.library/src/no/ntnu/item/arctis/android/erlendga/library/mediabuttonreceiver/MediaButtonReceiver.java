@@ -27,7 +27,7 @@ public class MediaButtonReceiver extends AndroidBlock {
 						return;
 					}
 					int keyEventAction = keyEvent.getAction();
-					
+					//TODO Should react on long-press instead of ACTION_UP
 					if (keyEventAction == KeyEvent.ACTION_UP) {
 							sendToBlock("MEDIA_BUTTON");
 					}
@@ -38,6 +38,7 @@ public class MediaButtonReceiver extends AndroidBlock {
 		
 		IntentFilter intentFilter = new IntentFilter(Intent.ACTION_MEDIA_BUTTON);
 		intentFilter.setPriority(priority);
+		//TODO Check out the registerMediaButtonReceiver method from the API
 		context.registerReceiver(broadcastReceiver, intentFilter);
 	}
 

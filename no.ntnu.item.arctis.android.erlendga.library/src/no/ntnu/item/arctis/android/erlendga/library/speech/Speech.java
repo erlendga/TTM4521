@@ -18,12 +18,12 @@ import com.bitreactive.library.android.core.startinvisibleactivity.InvisibleActi
 public class Speech extends Block {
 
 	private TextToSpeech textToSpeech;
+	public com.bitreactive.library.android.core.startinvisibleactivity.InvisibleActivity activity;
+	public android.os.PowerManager.WakeLock wakeLock;
 	// Instance parameter. Edit only in overview page.
 	public final int requestCode;
 	// Instance parameter. Edit only in overview page.
 	public final java.lang.String ID;
-	public com.bitreactive.library.android.core.startinvisibleactivity.InvisibleActivity activity;
-	public android.os.PowerManager.WakeLock wakeLock;
 	
 	public void textToSpeech(String text) {
 		HashMap<String, String> params = new HashMap<String, String>();
@@ -85,6 +85,7 @@ public class Speech extends Block {
 		            Intent installIntent = new Intent();
 		            installIntent.setAction(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA);
 		            getContext().startActivity(installIntent);
+		            sendToBlock("FAILED");
 		        }
 			}
 		});
@@ -94,18 +95,12 @@ public class Speech extends Block {
 			intent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
 			activity.startActivityForResult(intent, requestCode);
 		}catch (ActivityNotFoundException e) {
-			sendToBlock("NOT_FOUND");
+			sendToBlock("FAILED");
 		}
 	}
 
 	public void release() {
 		textToSpeech.shutdown();
-	}
-
-	// Do not edit this constructor.
-	public Speech(int requestCode, java.lang.String ID) {
-	    this.requestCode = requestCode;
-	    this.ID = ID;
 	}
 
 	public PowerManager.WakeLock aquireWakeLock() {
@@ -117,6 +112,12 @@ public class Speech extends Block {
 
 	public void finish() {
 		wakeLock.release();
+	}
+
+	// Do not edit this constructor.
+	public Speech(int requestCode, java.lang.String ID) {
+	    this.requestCode = requestCode;
+	    this.ID = ID;
 	}
 
 }

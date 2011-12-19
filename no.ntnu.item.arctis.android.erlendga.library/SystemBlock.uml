@@ -3,6 +3,9 @@
   <uml:Package xmi:id="_jHKG4ArAEeGNm-oHx2GRZA" name="no.ntnu.item.arctis.android.erlendga.library">
     <packagedElement xmi:type="uml:Collaboration" xmi:id="_jHKt8grAEeGNm-oHx2GRZA" name="System Block" classifierBehavior="_jHKt9ArAEeGNm-oHx2GRZA" collaborationRole="_jHLVAQrAEeGNm-oHx2GRZA">
       <ownedBehavior xmi:type="uml:Activity" xmi:id="_jHKt9ArAEeGNm-oHx2GRZA" name="System Block" partition="_jHL8EQrAEeGNm-oHx2GRZA">
+        <ownedOperation xmi:id="_QP37ICGmEeGl-fi076dneA" name="operation"/>
+        <ownedOperation xmi:id="_fE7OYCGnEeGl-fi076dneA" name="one"/>
+        <ownedOperation xmi:id="_kiaKwCGnEeGl-fi076dneA" name="two"/>
         <node xmi:type="uml:CallBehaviorAction" xmi:id="_OHZ00ArTEeGM-YHSbigeqQ" name="c0" inPartition="_jHL8EQrAEeGNm-oHx2GRZA">
           <argument xmi:id="_OHcREArTEeGM-YHSbigeqQ" name="terminate" incoming="_lveSUArTEeGM-YHSbigeqQ" inPartition="_jHL8EQrAEeGNm-oHx2GRZA"/>
           <argument xmi:id="_OHgigArTEeGM-YHSbigeqQ" name="init" incoming="_QrMAMArTEeGM-YHSbigeqQ" inPartition="_jHL8EQrAEeGNm-oHx2GRZA"/>
@@ -26,6 +29,15 @@
       </ownedBehavior>
       <ownedAttribute xmi:id="_jHLVAQrAEeGNm-oHx2GRZA" name="app"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_qC5Y0CGcEeGl-fi076dneA" name=".">
+      <when xmi:id="_qDIpYCGcEeGl-fi076dneA" name="t0">
+        <expr xmi:type="uml:LiteralString" xmi:id="_qDJQcCGcEeGl-fi076dneA" name="t0" value="1000"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_2hsmYCGdEeGl-fi076dneA" name="r0"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_8QCpQCGdEeGl-fi076dneA" name="SIGNAL"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_8QpGMCGdEeGl-fi076dneA" name="" signal="_8QCpQCGdEeGl-fi076dneA"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BktRwCGnEeGl-fi076dneA" name="int"/>
     <profileApplication xmi:id="_jHKt8ArAEeGNm-oHx2GRZA">
       <eAnnotations xmi:id="_jHKt8QrAEeGNm-oHx2GRZA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
@@ -43,7 +55,7 @@
   <arctis:system xmi:id="_jHLVAArAEeGNm-oHx2GRZA" base_Activity="_jHKt9ArAEeGNm-oHx2GRZA"/>
   <graphics:Shape xmi:id="_jHL8EArAEeGNm-oHx2GRZA" x="250" y="220" width="120" height="70" base_Element="_jHLVAQrAEeGNm-oHx2GRZA"/>
   <graphics:Shape xmi:id="_jHL8EgrAEeGNm-oHx2GRZA" x="180" y="54" width="379" height="55" base_Element="_jHKt9ArAEeGNm-oHx2GRZA"/>
-  <graphics:Shape xmi:id="_jHMjIArAEeGNm-oHx2GRZA" x="180" y="108" width="379" height="199" base_Element="_jHL8EQrAEeGNm-oHx2GRZA"/>
+  <graphics:Shape xmi:id="_jHMjIArAEeGNm-oHx2GRZA" x="180" y="108" width="379" height="217" base_Element="_jHL8EQrAEeGNm-oHx2GRZA"/>
   <graphics:Shape xmi:id="_OHiXsArTEeGM-YHSbigeqQ" x="119" y="34" base_Element="_OHeGQArTEeGM-YHSbigeqQ" orientation="east"/>
   <graphics:Shape xmi:id="_OHi-wArTEeGM-YHSbigeqQ" x="106" y="70" base_Element="_OHfUYArTEeGM-YHSbigeqQ" orientation="east"/>
   <graphics:Shape xmi:id="_OHi-wQrTEeGM-YHSbigeqQ" x="105" y="84" base_Element="_OHcREArTEeGM-YHSbigeqQ" orientation="east"/>
